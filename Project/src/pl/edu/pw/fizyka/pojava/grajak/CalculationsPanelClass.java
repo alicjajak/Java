@@ -12,10 +12,10 @@ import javax.swing.*;
 import javax.swing.JOptionPane;
 import javax.swing.text.DefaultCaret;
 
-import org.jfree.data.xy.XYSeries;
-import org.jfree.data.xy.XYSeriesCollection;
+//import org.jfree.data.xy.XYSeries;
+//import org.jfree.data.xy.XYSeriesCollection;
 
-public class CalculationsPanel extends JPanel{
+public class CalculationsPanelClass extends JPanel{
 	JPanel pC; //calculationsPanel (informacje o danych z obliczeñ)
 	JPanel pS; //speedPanel(informacja o prêdkoœci)
 	JPanel pB; //buttonPanel
@@ -33,7 +33,7 @@ public class CalculationsPanel extends JPanel{
 	
 	JButton buttonChart;
 	
-	public CalculationsPanel() {
+	public CalculationsPanelClass() {
 		this.setLayout(new BorderLayout());
 		pC = new JPanel(new GridLayout(3,2));
 		pB = new JPanel (new FlowLayout());
@@ -90,10 +90,11 @@ public class CalculationsPanel extends JPanel{
                 frame.setVisible(true);
            
                // final XYSeries chart = new XYSeries();
-                final XYSeriesCollection dataFunctions = new XYSeriesCollection();
+               //final XYSeriesCollection dataFunctions = new XYSeriesCollection();
 
             }
         });
     }
 
 }
+

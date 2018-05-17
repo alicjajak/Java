@@ -32,7 +32,7 @@ public class ButtonsPanelClass extends JPanel {
 	int f=0;
 
 	JComboBox typeOfSound;
-	String[] typeSounds = { "odgĹ‚os karetki", "odgĹ‚os samolotu", "odgĹ‚os klaksonu" };
+	String[] typeSounds = { "odgłos karetki", "odgłos samolotu", "odgłos klaksonu" };
 	
 	public ButtonsPanelClass() {
 		pV = new JPanel();
@@ -41,8 +41,8 @@ public class ButtonsPanelClass extends JPanel {
 		this.add(pV);
 		this.add(pF);
 		this.setLayout(new GridLayout(1, 2));
-		labelVrecipientInfo = new JLabel("PrÄ™dkoĹ›Ä‡ odbiorcy");
-		labelVsourceInfo = new JLabel("PrÄ™dkoĹ›Ä‡ ĹşrĂłdĹ‚a");
+		labelVrecipientInfo = new JLabel("Prędkość odbiorcy");
+		labelVsourceInfo = new JLabel("Prędkość źródła");
 		sliderVrecipient = new JSlider(JSlider.HORIZONTAL, -10, 10, 0);
 		sliderVsource = new JSlider(JSlider.HORIZONTAL, -50, 50, 0);
 		labelVsourceValue = new JLabel(String.format(sliderVsource.getValue() + " m/s"));
@@ -51,7 +51,7 @@ public class ButtonsPanelClass extends JPanel {
 		sliderVsource.addChangeListener(new ChangeSliderSource());
 		typeOfSound = new JComboBox(typeSounds);
 		frequencySound = new JComboBox(frequencyValue);
-		labelFrequencySoundValue = new JLabel("CzÄ™stotliwoĹ›Ä‡ dzwiÄ™ku ĹşrĂłdĹ‚a");
+		labelFrequencySoundValue = new JLabel("Częstotliwość dzwięku źródła");
 		labelTypeOfFrequency = new JLabel("Rodzaj dzwieku");
 		
 		pV.add(labelVsourceInfo);

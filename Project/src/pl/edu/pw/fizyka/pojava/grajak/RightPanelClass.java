@@ -14,12 +14,12 @@ import javax.swing.JSlider;
 public class RightPanelClass extends JPanel{
 	
 		ButtonsPanelClass b;
-		CalculationsPanel c;
+		CalculationsPanelClass c;
 	
 		JButton animation;
 		JButton doCalculationsButton;
 		
-	public RightPanelClass(ButtonsPanelClass butt, CalculationsPanel cal) {
+	public RightPanelClass(ButtonsPanelClass butt, CalculationsPanelClass cal) {
 		b=butt;
 		c=cal;
 		

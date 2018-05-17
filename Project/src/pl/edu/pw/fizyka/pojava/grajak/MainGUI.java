@@ -10,8 +10,8 @@ import javax.swing.*;
 
 public class MainGUI extends JFrame {
 
-	public CalculationsPanel calculationsPanel;
-	public AnimationPanel animationPanel;
+	public CalculationsPanelClass calculationsPanel;
+	public AnimationPanelClass animationPanel;
 	public ButtonsPanelClass buttonsPanel;
 	public RightPanelClass rightPanel;
 	
@@ -20,21 +20,15 @@ public class MainGUI extends JFrame {
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		
 		buttonsPanel = new ButtonsPanelClass();
-		animationPanel = new AnimationPanel();
-		calculationsPanel = new CalculationsPanel();
+		animationPanel = new AnimationPanelClass();
+		calculationsPanel = new CalculationsPanelClass();
 		rightPanel = new RightPanelClass(buttonsPanel, calculationsPanel);
 		
 		add(BorderLayout.NORTH, buttonsPanel);
 		add(BorderLayout.EAST, rightPanel);
 		add(BorderLayout.CENTER, animationPanel);
 		add(BorderLayout.SOUTH, calculationsPanel);
-		
 
-		
-
-		
-		
-		
 	}
 
 	public MainGUI(GraphicsConfiguration arg0) {
