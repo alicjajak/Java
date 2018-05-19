@@ -9,7 +9,6 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 import javax.swing.*;
-import javax.swing.JOptionPane;
 import javax.swing.text.DefaultCaret;
 
 //import org.jfree.data.xy.XYSeries;
@@ -72,7 +71,7 @@ public class CalculationsPanelClass extends JPanel{
 
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
-				createFrame();	
+				createFrame();
 			}
 		});
 		
@@ -82,12 +81,11 @@ public class CalculationsPanelClass extends JPanel{
         EventQueue.invokeLater(new Runnable()
         {
             @Override
-            public void run()
-            {
-                JFrame frame = new JFrame("Wykres");
-                frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-                frame.setSize(620,360);
-                frame.setVisible(true);
+            public void run(){
+            JFrame frame = new JFrame("Wykres");
+            frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+            frame.setSize(620,360);
+            frame.setVisible(true);
            
                // final XYSeries chart = new XYSeries();
                //final XYSeriesCollection dataFunctions = new XYSeriesCollection();
